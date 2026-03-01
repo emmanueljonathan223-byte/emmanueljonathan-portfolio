@@ -4,111 +4,98 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Emmanuel Jonathan | Web Developer</title>
+
+<!-- Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- HEADER / NAVBAR -->
 <header>
-    <div class="logo">EJ</div>
-
-    <nav>
-        <ul class="nav-links">
-            <li><a href="about.html">About</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">EJ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
-
-        <div class="menu-toggle" id="menu-toggle">☰</div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 </header>
 
 <!-- HERO SECTION -->
-<section class="hero">
-    <div class="hero-text">
-        <h1>Hi, I'm <span>Emmanuel Jonathan</span></h1>
-        <p>
-            I build responsive, secure, and modern websites.
-            Passionate about clean design and scalable backend systems.
-        </p>
-        <a href="projects.html" class="btn">View My Work</a>
-    </div>
-
-    <div class="hero-images">
-        <img src="image1.jfif" alt="Hero Image 1" class="hero-img">
-        <!-- <img src="image2.png" alt="Hero Image 2" class="hero-img"> -->
+<section class="hero py-5">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center">
+        <div class="hero-text flex-fill me-4">
+            <h1>Hi, I'm <span>Emmanuel Jonathan</span></h1>
+            <p>
+                I build responsive, secure, and modern websites.
+                Passionate about clean design and scalable backend systems.
+            </p>
+            <a href="projects.html" class="btn btn-primary">View My Work</a>
+        </div>
+        <div class="hero-images d-flex flex-wrap gap-3 justify-content-center flex-fill">
+            <img src="image1.jfif" alt="Hero Image 1" class="hero-img img-fluid rounded shadow">
+            <!-- <img src="image2.png" alt="Hero Image 2" class="hero-img img-fluid rounded shadow"> -->
+        </div>
     </div>
 </section>
 
 <!-- ABOUT SECTION -->
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I'm a web developer specializing in frontend and backend development.
-        I love building professional web applications that solve real problems.
-    </p>
+<section id="about" class="py-5">
+    <div class="container">
+        <h2>About Me</h2>
+        <p>
+            I'm a web developer specializing in frontend and backend development.
+            I love building professional web applications that solve real problems.
+        </p>
+    </div>
 </section>
 
 <!-- SKILLS SECTION -->
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">PHP</div>
-        <div class="skill">MySQL</div>
-        <div class="skill">Bootstrap</div>
+<section id="skills" class="py-5 bg-dark text-white">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-container d-flex flex-wrap gap-3">
+            <div class="skill bg-secondary p-2 rounded">HTML</div>
+            <div class="skill bg-secondary p-2 rounded">CSS</div>
+            <div class="skill bg-secondary p-2 rounded">JavaScript</div>
+            <div class="skill bg-secondary p-2 rounded">PHP</div>
+            <div class="skill bg-secondary p-2 rounded">MySQL</div>
+            <div class="skill bg-secondary p-2 rounded">Bootstrap</div>
+        </div>
     </div>
 </section>
 
-<!-- MODALS (Optional, commented out) -->
-<!--
-<div class="modal" id="modal1">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Banking Website</h2>
-        <p>A full-featured secure banking website built with HTML, CSS, JS & PHP.</p>
-        <p><strong>Technologies:</strong> HTML, CSS, JS, PHP, MySQL</p>
-        <img src="bank.png" alt="Banking Website Screenshot">
-    </div>
-</div>
-
-<div class="modal" id="modal2">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Portfolio Website</h2>
-        <p>Modern personal portfolio showcasing projects and skills.</p>
-        <p><strong>Technologies:</strong> HTML, CSS, JS</p>
-        <img src="html.png" alt="Portfolio Screenshot">
-    </div>
-</div>
-
-<div class="modal" id="modal3">
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Payment Integration</h2>
-        <p>Integrated Paystack payment gateway into a responsive web platform.</p>
-        <p><strong>Technologies:</strong> PHP, JS, HTML, CSS</p>
-        <img src="pay.jpeg" alt="Payment Screenshot">
-    </div>
-</div>
--->
-
 <!-- CONTACT SECTION -->
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:emmanueljonathan223@gmail.com">emmanueljonathan223@gmail.com</a></p>
-    <p>Phone: <a href="tel:+2348157460420">+234 (0) 8157460420</a></p>
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:emmanueljonathan223@gmail.com">emmanueljonathan223@gmail.com</a></p>
+        <p>Phone: <a href="tel:+2348157460420">+234 (0) 8157460420</a></p>
+    </div>
 </section>
 
 <!-- FOOTER -->
-<footer>
+<footer class="bg-dark text-white text-center py-3">
     <p>© 2026 Emmanuel Jonathan | All Rights Reserved</p>
 </footer>
 
-<!-- SCRIPT -->
+<!-- Bootstrap 5 JS Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Optional Custom JS -->
 <script src="script.js"></script>
 </body>
 </html>
