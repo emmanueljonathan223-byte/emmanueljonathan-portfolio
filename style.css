@@ -159,7 +159,13 @@ footer{
     .menu-toggle{
         display:block;
     }
+
+    /* 🔹 FIX FOR HAMBURGER MENU */
+    .nav-links.active{
+        display:flex;
+    }
 }
+
 /* ==========================
    SCROLL REVEAL ANIMATIONS
 ========================== */
@@ -185,6 +191,7 @@ section, .project-card, .skill{
     0%, 50%, 100%{ opacity:1; }
     25%, 75%{ opacity:0; }
 }
+
 /* =========================
    SKILL BARS
 ========================= */
@@ -216,7 +223,8 @@ section, .project-card, .skill{
     padding-right:10px;
     border-radius:8px;
 }
-It/* PROJECT GRID */
+
+/* PROJECT GRID */
 .project-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -275,7 +283,7 @@ It/* PROJECT GRID */
     cursor:pointer;
     color:#00bfff;
 }
-/* CONTACT FORM STYLES */
+
 /* CONTACT PAGE STYLES */
 .contact-info{
     max-width:800px;
@@ -334,7 +342,7 @@ It/* PROJECT GRID */
 }
 
 .social-links a::after{
-    content:'';
+    content:''; 
     position:absolute;
     width:0;
     height:2px;
@@ -351,6 +359,7 @@ It/* PROJECT GRID */
 .social-links a:hover{
     color:#00bfff;
 }
+
 /* HERO SECTION */
 .hero{
     display:flex;
@@ -398,4 +407,4 @@ It/* PROJECT GRID */
 
 .hero-img:hover{
     transform: scale(1.05);
-}
+        }
