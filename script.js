@@ -1,6 +1,12 @@
 // ==============================
 // MOBILE MENU TOGGLE
 // ==============================
+const menuBtn = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
@@ -149,4 +155,5 @@ copyButtons.forEach(btn => {
             alert("Failed to copy!");
         });
     });
+
 });
