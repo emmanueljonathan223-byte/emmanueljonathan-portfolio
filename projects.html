@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Emmanuel Jonathan</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">EJ</div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>My <span>Projects</span></h1>
+    <p>Here are some of my recent web development projects. Click on each card to see more details and screenshots.</p>
+</section>
+
+<section id="projects" class="projects-section">
+    <div class="project-grid">
+
+        <div class="project-card" data-modal="modal1">
+            <h3>Banking Website</h3>
+            <p>Secure online banking platform with dashboard system.</p>
+        </div>
+
+        <div class="project-card" data-modal="modal2">
+            <h3>Portfolio Website</h3>
+            <p>Modern responsive personal portfolio.</p>
+        </div>
+
+        <div class="project-card" data-modal="modal3">
+            <h3>Payment Integration</h3>
+            <p>Integrated Paystack payment gateway.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- MODALS -->
+<div class="modal" id="modal1">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Banking Website</h2>
+        <p>A full-featured secure banking website built with HTML, CSS, JS & PHP.</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JS, PHP, MySQL</p>
+        <img src="bank.png" alt="Banking Website Screenshot">
+    </div>
+</div>
+
+<div class="modal" id="modal2">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Portfolio Website</h2>
+        <p>Modern personal portfolio showcasing projects and skills.</p>
+        <p><strong>Technologies:</strong> HTML, CSS, JS</p>
+        <img src="html.png" alt="Portfolio Screenshot">
+    </div>
+</div>
+
+<div class="modal" id="modal3">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Payment Integration</h2>
+        <p>Integrated Paystack payment gateway into a responsive web platform.</p>
+        <p><strong>Technologies:</strong> PHP, JS, HTML, CSS</p>
+        <img src="pay.jpeg" alt="Payment Screenshot">
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Emmanuel Jonathan | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="projects.js"></script>
+</body>
+</html>
